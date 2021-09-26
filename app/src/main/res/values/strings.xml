@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MAD_2</string>
+    <string name="time">Time</string>
+    <string name="btn_next">Next</string>
+    <string name="date">Date</string>
+    <string name="table_reservation">Table Reservation</string>
+    <string name="no_of_persons">No.of persons</string>
+    <string name="order_something">Order Something(Rice/Koththu)</string>
+    <string name="order">Order</string>
+</resources>
