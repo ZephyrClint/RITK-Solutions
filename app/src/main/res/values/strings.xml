@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Mini_Project</string>
+    <string name="tv_1">SELECTED ITEMS</string>
+    <string name="tv_2">APPETIZER</string>
+    <string name="tv_3">MAIN COURSE</string>
+    <string name="tv_4"> DESSERT </string>
+    <string name="tv_5">OTHER</string>
+    <string name="title_activity_main3">MainActivity</string>
+
+    <string name="e_txt_dt_1">ADD DATE</string>
+    <string name="e_txt_tm_1">ADD TIME</string>
+    <string name="e_txt_num_1">No of People</string>
+    <string name="e_txt_addr_1">Adderess</string>
+    <string name="tv_menu">MENU</string>
+    <string name="btn_appetizer">APPETIZER</string>
+    <string name="btn_mainCourse">MAIN COURSE</string>
+    <string name="btn_dessert">DESSERT</string>
+    <string name="btn_other">OTHER</string>
+    <string name="btn_viewSelected">VIEW SELECTED ITEMS</string>
+    <string name="sel_itm_discard_btn">DISCARD</string>
+    <string name="sel_itm_confirm_btn">CONFIRM</string>
+    <string name="tv_Apptzr_title">APPETIZER</string>
+    <string name="tv_Breakfast_Apptzr">Breakfast</string>
+    <string name="tv_Lunch_Apptzr">Lunch</string>
+    <string name="tv_Dinner_Apptzr">Dinner</string>
+    <string name="tv_other_title">OTHER</string>
+    <string name="btn_Next_Apptzr">NEXT</string>
+    <string name="tv_MainCourse_title">MAIN COURSE</string>
+    <string name="tv_Dessert_title">DESSERT</string>
+    <string name="tv_view_event_dtls">VIEW EVENT DETAILS</string>
+    <string name="btn_discard">DISCARD</string>
+    <string name="btn_confirm">CONFIRM</string>
+    <string name="btn_view_initial_details">VIEW DETAILS</string>
+    <string name="update_button">UPDATE</string>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/tv_Apptzr_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tv_Apptzr_title"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Breakfast_Apptzr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/tv_Breakfast_Apptzr"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Apptzr_title" />
+
+    <TextView
+        android:id="@+id/tv_Lunch_Apptzr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text="@string/tv_Lunch_Apptzr"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton27" />
+
+    <TextView
+        android:id="@+id/tv_Dinner_Apptzr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text="@string/tv_Dinner_Apptzr"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton30" />
+
+    <Button
+        android:id="@+id/btn_Next_Apptzr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="openFourth"
+        android:text="@string/btn_Next_Apptzr"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toEndOf="@+id/tv_apptzr_tot_value"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_Apptzr_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/apptzr_clip_art" />
+
+    <ImageButton
+        android:id="@+id/imageButton27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Breakfast_Apptzr"
+        app:srcCompat="@drawable/wrapped_bacon" />
+
+    <ImageButton
+        android:id="@+id/imageButton28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageButton27"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Breakfast_Apptzr"
+        app:srcCompat="@drawable/watermelon_feta_bites" />
+
+    <ImageButton
+        android:id="@+id/imageButton29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageButton28"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Breakfast_Apptzr"
+        app:srcCompat="@drawable/walnut_endive" />
+
+    <ImageButton
+        android:id="@+id/imageButton30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Lunch_Apptzr"
+        app:srcCompat="@drawable/antipasto_skewers" />
+
+    <ImageButton
+        android:id="@+id/imageButton31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageButton30"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Lunch_Apptzr"
+        app:srcCompat="@drawable/burrata_with_tomatoes_and_pesto" />
+
+    <ImageButton
+        android:id="@+id/imageButton32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageButton31"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Lunch_Apptzr"
+        app:srcCompat="@drawable/grilled_apricot" />
+
+    <ImageButton
+        android:id="@+id/imageButton33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Dinner_Apptzr"
+        app:srcCompat="@drawable/veggie_and_hummus" />
+
+    <ImageButton
+        android:id="@+id/imageButton34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageButton33"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Dinner_Apptzr"
+        app:srcCompat="@drawable/pizza" />
+
+    <ImageButton
+        android:id="@+id/imageButton35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageButton34"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Dinner_Apptzr"
+        app:srcCompat="@drawable/shrimp_bites" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="415dp"
+        android:layout_height="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton33"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bottom_design" />
+
+    <TextView
+        android:id="@+id/tv_apptzr_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:text="Total"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/tv_apptzr_tot_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="3000"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_apptzr_total" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
