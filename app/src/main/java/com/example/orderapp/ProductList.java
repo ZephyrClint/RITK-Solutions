@@ -19,7 +19,7 @@ public class ProductList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listning);
 
-        // creating an arraylist
+        // creating an arraylist of objects
 
         orderModelList = new ArrayList<>();
         orderModelList.add(new OrderModel("Hotpot", getString(R.string.Hotpot), R.drawable.hotpot));
