@@ -51,7 +51,7 @@ public class SummaryActivity extends AppCompatActivity implements LoaderManager.
         backtoList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SummaryActivity.this, MainActivity.class);
+                Intent intent = new Intent(SummaryActivity.this, ProductList.class);
                 startActivity(intent);
 
             }

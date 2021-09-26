@@ -34,7 +34,7 @@ public class frontMenu extends AppCompatActivity {
 
         orderButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(frontMenu.this, MainActivity.class);
+                Intent intent = new Intent(frontMenu.this, ProductList.class);
                 startActivity(intent);
 
             }

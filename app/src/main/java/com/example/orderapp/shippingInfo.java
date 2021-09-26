@@ -71,7 +71,7 @@ public class shippingInfo extends AppCompatActivity {
             public void onClick(View v) {
                 int deletethedata = getContentResolver().delete(OrderContract.OrderEntry.CONTENT_URI, null, null);
                 Toast.makeText(shippingInfo.this, "Order Canceled Successfully", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(shippingInfo.this, MainActivity.class);
+                Intent intent = new Intent(shippingInfo.this, ProductList.class);
                 startActivity(intent);
             }
         });
