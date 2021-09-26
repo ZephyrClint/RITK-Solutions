@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lemon_cafe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lemon_Cafe">
+        <activity
+            android:name=".edit_feedback"
+            android:exported="true" />
+        <activity
+            android:name=".User_feedbacks"
+            android:exported="true" />
+        <activity
+            android:name=".giveFeedback"
+            android:exported="true" />
+        <activity
+            android:name=".deleteAccount"
+            android:exported="true" />
+        <activity
+            android:name=".change_password"
+            android:exported="true" />
+        <activity
+            android:name=".personalDetails"
+            android:exported="true" />
+        <activity
+            android:name=".UserAccount"
+            android:exported="true" />
+        <activity
+            android:name=".sign_in"
+            android:exported="true" />
+        <activity
+            android:name=".sign_up"
+            android:exported="true" />
+        <activity
+            android:name=".signUp"
+            android:exported="true" />
+        <activity
+            android:name=".database.signUp"
+            android:exported="true" />
+        <activity
+            android:name=".intro_02"
+            android:exported="true" />
+        <activity
+            android:name=".intro_01"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
