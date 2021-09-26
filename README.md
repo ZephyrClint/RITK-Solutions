@@ -1,2 +1,2 @@
-# RITK_Solutions
+# RITK Solutions
 MAD Mini Project
