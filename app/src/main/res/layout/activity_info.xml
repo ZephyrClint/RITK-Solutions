@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fouthCardView"
+        android:layout_width="379dp"
+        android:layout_height="550dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewInfo"
+                android:layout_width="252dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/productName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="66dp"
+                android:layout_marginLeft="66dp"
+                android:layout_marginTop="107dp"
+                android:layout_marginEnd="61dp"
+                android:layout_marginRight="61dp"
+                app:srcCompat="@drawable/braised" />
+
+            <TextView
+                android:id="@+id/descriptioninfo"
+                android:layout_width="363dp"
+                android:layout_height="101dp"
+                android:layout_below="@+id/productName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="395dp"
+                android:text="@string/Hotpot"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="294dp"
+                android:layout_height="63dp"
+                android:layout_below="@+id/imageViewInfo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="43dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginRight="42dp"
+                android:layout_marginBottom="99dp"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/smallSize"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Small"
+                    android:textColor="#FF9800" />
+
+                <RadioButton
+                    android:id="@+id/mediumSize"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Medium"
+                    android:textColor="#FF9800" />
+
+                <RadioButton
+                    android:id="@+id/largeSize"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="Large"
+                    android:textColor="#FF9800" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="183dp"
+                android:layout_marginLeft="183dp"
+                android:layout_marginEnd="182dp"
+                android:layout_marginRight="182dp"
+                android:layout_marginBottom="39dp"
+                android:text="0"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/addquantity"
+                android:layout_width="48dp"
+                android:layout_height="47dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="219dp"
+                android:layout_marginLeft="219dp"
+                android:layout_marginEnd="114dp"
+                android:layout_marginRight="114dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/plus" />
+
+            <ImageButton
+                android:id="@+id/subquantity"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="111dp"
+                android:layout_marginLeft="111dp"
+                android:layout_marginEnd="223dp"
+                android:layout_marginRight="223dp"
+                android:layout_marginBottom="33dp"
+                android:background="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginRight="42dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Product Name"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/secondCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_below="@+id/fouthCardView"
+        android:layout_marginTop="19dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:layout_marginTop="10dp">
+
+
+            <Button
+                android:id="@+id/addtocart"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="234dp"
+                android:layout_marginLeft="234dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/yellow"
+                android:text="Add to cart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="42dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginRight="65dp"
+                android:text="Price"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+
+
