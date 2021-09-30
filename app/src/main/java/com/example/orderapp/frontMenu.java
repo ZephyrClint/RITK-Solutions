@@ -2,7 +2,7 @@ package com.example.orderapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -10,8 +10,6 @@ import android.widget.ViewFlipper;
 
 public class frontMenu extends AppCompatActivity {
     ViewFlipper v_flipper;
-
-
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {

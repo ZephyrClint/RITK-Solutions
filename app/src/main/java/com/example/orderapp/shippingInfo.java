@@ -1,29 +1,24 @@
 package com.example.orderapp;
 
 import android.app.AlarmManager;
-import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.ContentValues;
 import android.content.Intent;
-import android.media.Ringtone;
-import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-import android.provider.Settings;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.NotificationCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 import com.example.orderapp.Database.OrderContract;
-import android.os.Bundle;
+
 import android.text.TextWatcher;
-import android.widget.EditText;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -52,6 +47,7 @@ public class shippingInfo extends AppCompatActivity {
 
         Button Order = findViewById(R.id.orderBasket2);
         Button cancelOrder = findViewById(R.id.cancelOrder);
+        ImageView bckMainMenue  =findViewById(R.id.bckMainMenue3330);
 
         custName = findViewById(R.id.editCustName);
         cvv = findViewById(R.id.editTextCvv);
@@ -75,6 +71,15 @@ public class shippingInfo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        bckMainMenue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(shippingInfo.this, frontMenu.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 

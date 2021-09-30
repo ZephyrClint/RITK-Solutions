@@ -27,17 +27,16 @@
         <activity android:name=".product7" />
         <activity android:name=".product8" />
         <activity android:name=".product9" />
-        <activity android:name=".frontMenu" >
+        <activity android:name=".ProductList" />
 
+        <activity android:name=".frontMenu" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
-
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-
         </activity>
 
-        <activity android:name=".ProductList" />
+
 
 
 
