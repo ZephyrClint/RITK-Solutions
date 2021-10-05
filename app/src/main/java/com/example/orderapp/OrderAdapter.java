@@ -2,7 +2,7 @@ package com.example.orderapp;
 
 import android.content.Context;
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -63,7 +63,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
         public ViewHolder(View itemView) {
             super(itemView);
 
-            mProductName = itemView.findViewById(R.id.coffeeName);
+            mProductName = itemView.findViewById(R.id.producName);
             mProductDesc = itemView.findViewById(R.id.description);
             mProductImg = itemView.findViewById(R.id.productImage);
             itemView.setOnClickListener(this);

@@ -1,29 +1,46 @@
 <resources>
     <string name="app_name">Lemon Cafe</string>
-
-
     <string name="Hotpot">You really appreciate hotpot rather than just ordering fried rice, chow mein, and dim sum all the time, you are truly a Chinese cuisine fan!</string>
-
-
     <string name="SichuanPork">Rather than cooking pork by stir-frying or deep-frying, which consumes lots of oil and can very easily overcook the pork, it is boiled in water with a coating made from egg-white and starch to preserve its freshness and tenderness.</string>
-
-
     <string name="PorkBalls"> If you like meatballs and spaghetti, you’ll probably appreciate Chinese meatballs as well. The super-smooth and flavory gravy is almost like a “drug sauce” keeping your taste buds wanting more and more.</string>
-
-
     <string name="Shrimp">This steamed dish brings out the aroma of everything it has. The heavy garlic with a seafood sauce flavor blends with the freshness of juicy shrimp.</string>
-
-
     <string name="Dumplings">Popular fillings are mince pork, diced shrimp, ground chicken, beef, and vegetables. They can be cooked by boiling, steaming, or frying.</string>
-
-
     <string name="ChowMein">or making chow mein, the noodles need to be cooked in boiling water for a while. After they becoming cool, then move to the step of stir-frying.</string>
-
     <string name="RoastedDuck">Peking duck is savored for its thin and crispy skin. The Sliced Peking duck is often eaten with pancakes, sweet bean sauce, or soy with mashed garlic.</string>
-
     <string name="SteamedVermicelli">White sheets of rice starch are rolled with various fillings. Some popular choices are beef/pork, shrimp, even oyster, with mushroom, egg, lettuce, watercress etc. </string>
-
     <string name="FriedShrimp">You get the tenderness of peeled shrimps and the crispiness of cashew nuts. The shrimp is always tender and juicy and easy to deal with </string>
 
+<!--    Thiran-->
+    <string name="tv_1">SELECTED ITEMS</string>
+    <string name="tv_2">APPETIZER</string>
+    <string name="tv_3">MAIN COURSE</string>
+    <string name="tv_4"> DESSERT </string>
+    <string name="tv_5">OTHER</string>
+    <string name="title_activity_main3">MainActivity</string>
+    <string name="e_txt_dt_1">ADD DATE</string>
+    <string name="e_txt_tm_1">ADD TIME</string>
+    <string name="e_txt_num_1">No of People</string>
+    <string name="e_txt_addr_1">Adderess</string>
+    <string name="tv_menu">MENU</string>
+    <string name="btn_appetizer">APPETIZER</string>
+    <string name="btn_mainCourse">MAIN COURSE</string>
+    <string name="btn_dessert">DESSERT</string>
+    <string name="btn_other">OTHER</string>
+    <string name="btn_viewSelected">VIEW SELECTED ITEMS</string>
+    <string name="sel_itm_discard_btn">DISCARD</string>
+    <string name="sel_itm_confirm_btn">CONFIRM</string>
+    <string name="tv_Apptzr_title">APPETIZER</string>
+    <string name="tv_Breakfast_Apptzr">Breakfast</string>
+    <string name="tv_Lunch_Apptzr">Lunch</string>
+    <string name="tv_Dinner_Apptzr">Dinner</string>
+    <string name="tv_other_title">OTHER</string>
+    <string name="btn_Next_Apptzr">NEXT</string>
+    <string name="tv_MainCourse_title">MAIN COURSE</string>
+    <string name="tv_Dessert_title">DESSERT</string>
+    <string name="tv_view_event_dtls">VIEW EVENT DETAILS</string>
+    <string name="btn_discard">DISCARD</string>
+    <string name="btn_confirm">CONFIRM</string>
+    <string name="btn_view_initial_details">VIEW DETAILS</string>
+    <string name="update_button">UPDATE</string>
 
 </resources>

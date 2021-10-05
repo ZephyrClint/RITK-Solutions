@@ -47,7 +47,8 @@ public class frontMenu extends AppCompatActivity {
 
         cateringButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(frontMenu.this, "not yet", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(frontMenu.this, MainActivity.class);
+                startActivity(intent);
 
             }
         });

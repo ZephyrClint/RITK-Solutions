@@ -38,7 +38,7 @@
                 android:layout_marginLeft="6dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginBottom="2dp"
-                android:src="@mipmap/ic_launcher_round" />
+                android:src="@drawable/plus" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -46,13 +46,13 @@
                 tools:text=""
                 android:textSize="12sp"
                 android:layout_marginRight="12dp"
-                android:layout_below="@+id/coffeeName"
+                android:layout_below="@+id/producName"
                 android:layout_marginLeft="12dp"
                 android:id="@+id/description"
                 android:layout_toRightOf="@+id/productImage"/>
 
             <TextView
-                android:id="@+id/coffeeName"
+                android:id="@+id/producName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
