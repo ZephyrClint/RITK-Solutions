@@ -17,4 +17,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
 
+<!--    Yohan-->
+    <color name="light_green">#00BE4C</color>
+    <color name="orange">#FFAA1C</color>
+    <color name="dark_green">#005C13</color>
+
 </resources>

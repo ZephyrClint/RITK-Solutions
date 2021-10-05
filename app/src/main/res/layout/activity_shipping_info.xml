@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:viewBindingIgnore="true"
     tools:context=".shippingInfo">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/fouthCardView"
+        android:id="@+id/fouthCardView1"
         android:layout_width="395dp"
         android:layout_height="257dp"
         android:layout_centerHorizontal="true"
@@ -106,7 +107,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/fouthCardView"
+        android:id="@+id/fouthCardView2"
         android:layout_width="394dp"
         android:layout_height="184dp"
         android:layout_centerHorizontal="true"
@@ -181,13 +182,13 @@
         android:textColor="#FF9800"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/fouthCardView"
+        app:layout_constraintBottom_toTopOf="@+id/fouthCardView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/fouthCardView"
+        android:id="@+id/fouthCardView3"
         android:layout_width="380dp"
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
@@ -199,7 +200,7 @@
         app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fouthCardView"
+        app:layout_constraintTop_toBottomOf="@+id/fouthCardView1"
         app:layout_constraintVertical_bias="0.922">
 
         <RelativeLayout

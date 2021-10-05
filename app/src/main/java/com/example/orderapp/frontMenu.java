@@ -11,6 +11,17 @@ import android.widget.ViewFlipper;
 public class frontMenu extends AppCompatActivity {
     ViewFlipper v_flipper;
 
+    String email;
+
+    void getIntentData(){
+        if(getIntent().hasExtra("email")){
+            email = getIntent().getStringExtra("email");
+            Toast.makeText(frontMenu.this, "Got Data", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(frontMenu.this, "No Data", Toast.LENGTH_SHORT).show();
+        }
+    }
+
     @Override
     protected void onCreate (Bundle savedInstanceState) {
 
@@ -23,7 +34,7 @@ public class frontMenu extends AppCompatActivity {
         ImageView orderButton = (ImageView)findViewById(R.id.orderButtonImg);
         ImageView userButton = (ImageView)findViewById(R.id.userButtonImg);
         ImageView cateringButton = (ImageView)findViewById(R.id.cateringButtonImg);
-        ImageView reservationButton = (ImageView)findViewById(R.id.userButtonImg);
+        ImageView reservationButton = (ImageView)findViewById(R.id.reservationButtonImg);
 
 
         for(int image : images){
@@ -40,7 +51,10 @@ public class frontMenu extends AppCompatActivity {
 
         userButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(frontMenu.this, "not yet", Toast.LENGTH_SHORT).show();
+                getIntentData();
+                Intent intent2 = new Intent(frontMenu.this, home.class);
+                intent2.putExtra("email", String.valueOf(email));
+                startActivity(intent2);
 
             }
         });
@@ -55,7 +69,8 @@ public class frontMenu extends AppCompatActivity {
 
         reservationButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(frontMenu.this, "not yet", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(frontMenu.this, ReservationForm.class);
+                startActivity(intent);
 
             }
         });

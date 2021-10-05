@@ -9,9 +9,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/reservation"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/reservation"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -28,6 +28,14 @@
         <activity android:name=".product8" />
         <activity android:name=".product9" />
         <activity android:name=".ProductList" />
+        <activity android:name=".frontMenu" />
+
+<!--        <activity android:name=".frontMenu" >-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
 
 <!--        Thiran-->
         <activity android:name=".MainActivity7"	/>
@@ -38,13 +46,88 @@
         <activity android:name=".MainActivity2" />
         <activity android:name=".MainActivity"	/>
 
+<!--        Kalindu-->
+        <activity
+            android:name=".ReservationView"
+            android:exported="true" />
+        <activity
+            android:name=".ReservationForm"
+            android:exported="true"/>
 
-        <activity android:name=".frontMenu" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+
+<!--        Yohan-->
+        <activity
+            android:name=".home"
+            android:label="Feedback"
+            android:parentActivityName=".UserAccount"
+            android:exported="true" />
+        <activity
+            android:name=".change_password"
+            android:label="Change Password"
+            android:parentActivityName=".UserAccount"
+            android:exported="true" />
+        <activity
+            android:name=".edit_feedback"
+            android:exported="true"
+            android:label="Edit My Feedback"
+            android:parentActivityName=".User_feedbacks"/>
+        <activity
+            android:name=".User_feedbacks"
+            android:exported="true"
+            android:label="My Feedback"
+            android:parentActivityName=".UserAccount"/>
+        <activity
+            android:name=".giveFeedback"
+            android:exported="true"
+            android:label="Give Feedback"
+            android:parentActivityName=".home"/>
+        <activity
+            android:name=".personalDetailsEdit"
+            android:exported="true"
+            android:label="Update My Details"
+            android:parentActivityName=".personalDetails"/>
+        <activity
+            android:name=".personalDetails"
+            android:exported="true"
+            android:label="My Details"
+            android:parentActivityName=".UserAccount"/>
+        <activity
+            android:name=".UserAccount"
+            android:exported="true"
+            android:label="My Account"
+            android:parentActivityName=".home"/>
+        <activity
+            android:name=".sign_in"
+            android:exported="true"
+            android:label="Login"
+            android:parentActivityName=".intro_02" />
+        <activity
+            android:name=".sign_up"
+            android:exported="true"
+            android:label="Register"
+            android:parentActivityName=".intro_02" />
+        <activity
+            android:name=".intro_02"
+            android:exported="true"
+            android:label="Lemon Cafe" />
+        <activity
+            android:name=".intro_01"
+            android:exported="true"
+            android:label="Lemon Cafe" />
+
+        <activity
+            android:name=".MainActivityUser"
+            android:exported="true"
+            android:label="Lemon Cafe">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
+
 
 
 

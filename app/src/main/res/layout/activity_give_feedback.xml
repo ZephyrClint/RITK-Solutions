@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFD358"
+    tools:context=".giveFeedback">
+
+    <TextView
+        android:id="@+id/giveFeedback"
+        android:layout_width="326dp"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="Give A Feedback"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="292dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/roundtextcorner"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Type Here......."
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/feedbackSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/giveFeedback"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="277dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundtextcorner"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/feedbackSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/feedbackSubmit"
+        android:layout_width="167dp"
+        android:layout_height="79dp"
+        android:backgroundTint="#A39F8B"
+        android:text="SUBMIT"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
