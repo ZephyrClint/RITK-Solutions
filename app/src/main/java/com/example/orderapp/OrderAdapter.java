@@ -34,7 +34,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder( ViewHolder holder, int position) {
 
-        // here we will find the position and start setting the output on our views
+        // set product details to model class which select from list
 
         String nameOfProduct = orderModelList.get(position).getmProductName();
         String descOfProduct = orderModelList.get(position).getmProductDesc();
@@ -51,11 +51,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
         return orderModelList.size();
     }
 
-    // in order to make our views responsive we can implement onclicklistener on our recyclerview
-
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-
-        // here we will find the views on which we will inflate our data
 
         TextView mProductName, mProductDesc;
         ImageView mProductImg;
@@ -67,14 +63,12 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
             mProductDesc = itemView.findViewById(R.id.description);
             mProductImg = itemView.findViewById(R.id.productImage);
             itemView.setOnClickListener(this);
-
-
         }
 
         @Override
         public void onClick(View v) {
 
-            // lets get the position of the view in list and then work on it
+            // Start java activity according to product based on position in list
 
             int position = getAdapterPosition();
 

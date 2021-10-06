@@ -65,6 +65,7 @@ public class product1 extends AppCompatActivity implements LoaderManager.LoaderC
             }
         });
 
+        //Quantity Calculation
         plusquantity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,6 +103,8 @@ public class product1 extends AppCompatActivity implements LoaderManager.LoaderC
         });
     }
 
+
+    //create order and save to cart list
     private boolean SaveCart() {
         // getting the values from our views
         String name = productName.getText().toString();
@@ -135,6 +138,7 @@ public class product1 extends AppCompatActivity implements LoaderManager.LoaderC
         return hasAllRequiredValues;
     }
 
+    //Calculate Price according to quantity
     private int CalculatePrice(RadioButton smallPrice, RadioButton mediumPrice, RadioButton largePrice) {
 
         int basePrice = 1500;
@@ -157,6 +161,8 @@ public class product1 extends AppCompatActivity implements LoaderManager.LoaderC
     private void displayQuantity() {
         quantitynumber.setText(String.valueOf(quantity));
     }
+
+
 
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {

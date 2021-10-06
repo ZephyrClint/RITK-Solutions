@@ -20,6 +20,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:id="@+id/e_txt_id_1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_view_initial_details"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/tv_caterOrder_id"
+        app:layout_constraintTop_toBottomOf="@+id/tv_menu"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
         android:id="@+id/e_txt_tm_1"
         android:layout_width="149dp"
         android:layout_height="48dp"
@@ -37,12 +54,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="165dp"
         android:ems="10"
         android:hint="@string/e_txt_num_1"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/e_txt_dt_1" />
 
@@ -180,9 +198,10 @@
         android:text="@string/btn_view_initial_details"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_other" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_other"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_confirm_1"
@@ -219,6 +238,17 @@
         android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_confirm_1"
         app:layout_constraintStart_toEndOf="@+id/btn_confirm_1" />
+
+    <TextView
+        android:id="@+id/tv_caterOrder_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/ShowOrderID"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_view_initial_details"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -45,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="2000"
+        android:text="0"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_Next_Dessert"
@@ -172,5 +172,133 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton52"
         app:layout_constraintTop_toBottomOf="@+id/imageButton50"
         app:srcCompat="@drawable/dessert_4" />
+
+    <TextView
+        android:id="@+id/tv_lemon_lush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="8dp"
+        android:text="Rs.150"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton45" />
+
+    <TextView
+        android:id="@+id/tv_cheesecake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:text="Rs.450"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_lemon_lush"
+        app:layout_constraintStart_toEndOf="@+id/tv_lemon_lush" />
+
+    <TextView
+        android:id="@+id/tv_frozen_oreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="51dp"
+        android:text="Rs.300"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_cheesecake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_cheesecake" />
+
+    <TextView
+        android:id="@+id/tv_mousse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="18dp"
+        android:text="Rs.450"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton48" />
+
+    <TextView
+        android:id="@+id/tv_crunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="Rs.380"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_mousse"
+        app:layout_constraintStart_toEndOf="@+id/tv_mousse" />
+
+    <TextView
+        android:id="@+id/tv_velvet_choc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="49dp"
+        android:text="Rs.420"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_crunch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_crunch" />
+
+    <TextView
+        android:id="@+id/tv_sundae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="10dp"
+        android:text="Rs.380"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton51" />
+
+    <TextView
+        android:id="@+id/tv_dessert_nacho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="Rs.410"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_sundae"
+        app:layout_constraintStart_toEndOf="@+id/tv_sundae" />
+
+    <TextView
+        android:id="@+id/tv_tiramisu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="45dp"
+        android:text="Rs.475"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_dessert_nacho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_dessert_nacho" />
+
+    <Button
+        android:id="@+id/btn_dessert_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="@string/sel_itm_confirm_btn"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_dessert_view_details"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dessert_view_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btn_view_initial_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton51" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

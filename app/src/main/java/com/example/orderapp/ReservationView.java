@@ -121,6 +121,7 @@ public class ReservationView extends AppCompatActivity {
         String Date = date.toString();
         String noOfPersons = editNumber.getText().toString();
         String order = editOrder.getText().toString();
+        Toast.makeText(this, " ", Toast.LENGTH_SHORT).show();
 
 //        if(order.isEmpty() || time.isEmpty() || date.isEmpty() || noOfPersons.isEmpty())
         if(order.isEmpty() || time.isEmpty() || noOfPersons.isEmpty()){

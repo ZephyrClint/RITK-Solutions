@@ -25,8 +25,10 @@
         android:layout_marginTop="140dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton43"
+        app:layout_constraintVertical_bias="0.639"
         app:srcCompat="@drawable/bottom_design" />
 
     <TextView
@@ -80,16 +82,16 @@
         android:id="@+id/btn_Next_MainCourse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="36dp"
         android:onClick="openFifth"
         android:text="@string/btn_Next_Apptzr"
         android:textColor="#000000"
         android:textSize="28sp"
         app:backgroundTint="#FF9800"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tv_Total_MainCourse"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
-        app:layout_constraintStart_toEndOf="@+id/tv_Total_MainCourse" />
+        app:layout_constraintEnd_toStartOf="@+id/btn_main_view_details"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toEndOf="@+id/btn_main_confirm"
+        app:layout_constraintTop_toTopOf="@+id/tv_water_cress" />
 
     <TextView
         android:id="@+id/tv_Total_MainCourse"
@@ -97,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="12dp"
-        android:text="2000"
+        android:text="0"
         android:textSize="28dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintStart_toStartOf="parent"
@@ -191,5 +193,130 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton43"
         app:layout_constraintTop_toBottomOf="@+id/tv_MainCourse_Dinner"
         app:srcCompat="@drawable/maincourse_9" />
+
+    <TextView
+        android:id="@+id/tv_chicken_parmesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="6dp"
+        android:text="Rs.2300"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton36" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:text="Rs.2100"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_chicken_parmesan"
+        app:layout_constraintStart_toEndOf="@+id/tv_chicken_parmesan" />
+
+    <TextView
+        android:id="@+id/tv_lamb_saddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="Rs.3100"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/tv_salads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="9dp"
+        android:text="Rs.2800"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton39" />
+
+    <TextView
+        android:id="@+id/tv_seafood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:text="Rs.3000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_salads"
+        app:layout_constraintStart_toEndOf="@+id/tv_salads" />
+
+    <TextView
+        android:id="@+id/tv_spaghetti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Rs.2900"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_seafood"
+        app:layout_constraintStart_toEndOf="@+id/tv_seafood" />
+
+    <TextView
+        android:id="@+id/tv_steak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="12dp"
+        android:text="Rs.3200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton42" />
+
+    <TextView
+        android:id="@+id/tv_water_cress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Rs.2300"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_steak"
+        app:layout_constraintStart_toEndOf="@+id/tv_steak" />
+
+    <TextView
+        android:id="@+id/tv_turkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="60dp"
+        android:text="Rs.4300"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_water_cress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_water_cress" />
+
+    <Button
+        android:id="@+id/btn_main_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="@string/sel_itm_confirm_btn"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_main_view_details"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_main_view_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/btn_view_initial_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toEndOf="@+id/btn_main_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton42" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

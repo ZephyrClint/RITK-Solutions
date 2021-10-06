@@ -58,17 +58,18 @@
         android:id="@+id/btn_Next_Apptzr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:layout_marginEnd="80dp"
         android:onClick="openFourth"
         android:text="@string/btn_Next_Apptzr"
         android:textColor="#000000"
         android:textSize="24sp"
         app:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toEndOf="@+id/tv_apptzr_tot_value"
-        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.636" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -86,6 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
+        android:onClick="saveWrappedBaconOrder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Breakfast_Apptzr"
         app:srcCompat="@drawable/wrapped_bacon" />
@@ -94,6 +96,8 @@
         android:id="@+id/imageButton28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:onClick="saveFetaBiteOrder"
         app:layout_constraintStart_toEndOf="@+id/imageButton27"
         app:layout_constraintTop_toBottomOf="@+id/tv_Breakfast_Apptzr"
         app:srcCompat="@drawable/watermelon_feta_bites" />
@@ -102,6 +106,8 @@
         android:id="@+id/imageButton29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:onClick="saveEndiveOrder"
         app:layout_constraintStart_toEndOf="@+id/imageButton28"
         app:layout_constraintTop_toBottomOf="@+id/tv_Breakfast_Apptzr"
         app:srcCompat="@drawable/walnut_endive" />
@@ -111,6 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
+        android:onClick="saveSkewerOrder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Lunch_Apptzr"
         app:srcCompat="@drawable/antipasto_skewers" />
@@ -119,6 +126,8 @@
         android:id="@+id/imageButton31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:onClick="saveBurrataOrder"
         app:layout_constraintStart_toEndOf="@+id/imageButton30"
         app:layout_constraintTop_toBottomOf="@+id/tv_Lunch_Apptzr"
         app:srcCompat="@drawable/burrata_with_tomatoes_and_pesto" />
@@ -127,6 +136,8 @@
         android:id="@+id/imageButton32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="saveApricotOrder"
         app:layout_constraintStart_toEndOf="@+id/imageButton31"
         app:layout_constraintTop_toBottomOf="@+id/tv_Lunch_Apptzr"
         app:srcCompat="@drawable/grilled_apricot" />
@@ -136,6 +147,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
+        android:onClick="saveHummasOrder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Dinner_Apptzr"
         app:srcCompat="@drawable/veggie_and_hummus" />
@@ -144,6 +156,8 @@
         android:id="@+id/imageButton34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:onClick="savePizzaOrder"
         app:layout_constraintStart_toEndOf="@+id/imageButton33"
         app:layout_constraintTop_toBottomOf="@+id/tv_Dinner_Apptzr"
         app:srcCompat="@drawable/pizza" />
@@ -152,6 +166,8 @@
         android:id="@+id/imageButton35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:onClick="saveShrimpBiteOrder"
         app:layout_constraintStart_toEndOf="@+id/imageButton34"
         app:layout_constraintTop_toBottomOf="@+id/tv_Dinner_Apptzr"
         app:srcCompat="@drawable/shrimp_bites" />
@@ -185,9 +201,140 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="8dp"
-        android:text="3000"
+        android:text="0"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_apptzr_total" />
+
+    <Button
+        android:id="@+id/btn_main_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="@string/sel_itm_confirm_btn"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_main_view_details"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Next_Apptzr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_main_view_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="viewAllAptzr"
+        android:text="@string/btn_view_initial_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toEndOf="@+id/btn_main_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton35"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <TextView
+        android:id="@+id/tv_wrpd_bcn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="8dp"
+        android:text="Rs.1000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton27" />
+
+    <TextView
+        android:id="@+id/tv_feta_bites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:text="Rs.800"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_wrpd_bcn"
+        app:layout_constraintStart_toEndOf="@+id/tv_wrpd_bcn" />
+
+    <TextView
+        android:id="@+id/tv_endive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="103dp"
+        android:text="Rs.900"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_feta_bites"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_feta_bites" />
+
+    <TextView
+        android:id="@+id/tv_skewers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="8dp"
+        android:text="Rs.1250"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton30" />
+
+    <TextView
+        android:id="@+id/tv_burrata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:text="Rs.1650"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_skewers"
+        app:layout_constraintStart_toEndOf="@+id/tv_skewers" />
+
+    <TextView
+        android:id="@+id/tv_apricot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="74dp"
+        android:text="Rs.900"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_burrata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_burrata" />
+
+    <TextView
+        android:id="@+id/tv_veg_hummas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:text="Rs.1100"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton33" />
+
+    <TextView
+        android:id="@+id/tv_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Rs.1200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_veg_hummas"
+        app:layout_constraintStart_toEndOf="@+id/btn_main_confirm" />
+
+    <TextView
+        android:id="@+id/tv_shrimp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="Rs.890"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_pizza"
+        app:layout_constraintStart_toEndOf="@+id/tv_pizza" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
