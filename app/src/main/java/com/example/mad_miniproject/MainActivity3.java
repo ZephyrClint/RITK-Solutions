@@ -1,7 +1,9 @@
 package com.example.mad_miniproject;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +11,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.mad_miniproject.database.DBHelper;
+import com.example.mad_miniproject.database.ItemsMaster;
+
+import java.util.List;
 
 public class MainActivity3 extends AppCompatActivity {
 
@@ -30,6 +38,9 @@ public class MainActivity3 extends AppCompatActivity {
     ImageButton imageButton34;
     ImageButton imageButton35;
     ImageView imageView7;
+
+    String id, noOfPeople;
+    int ID, number_of_people;
 
     //navigation
     public void openFourth(View view) {
@@ -60,7 +71,199 @@ public class MainActivity3 extends AppCompatActivity {
         imageButton34 = findViewById(R.id.imageButton34);
         imageButton35 = findViewById(R.id.imageButton35);
         imageView7 = findViewById(R.id.imageView7);
+
+//        Intent intent = getIntent();
+//        id = intent.getStringExtra("id");
+//        noOfPeople = intent.getStringExtra("noOfPeople");
+//
+//        ID = Integer.getInteger(id);
+//        number_of_people = Integer.getInteger(noOfPeople);
+
     }
 
+
+
+    public void saveWrappedBaconOrder(View view) {
+
+        long inserted;
+
+        DBHelper dbHelper = new DBHelper(this);
+
+        inserted = dbHelper.addApptzrInfo("Wrapped Bacon", 1000, number_of_people, ID);
+        Toast.makeText(this, " "+ inserted, Toast.LENGTH_SHORT).show();
+
+        if (inserted > 0) {
+            Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void saveFetaBiteOrder(View view) {
+
+        long inserted;
+
+        DBHelper dbHelper = new DBHelper(this);
+
+        inserted = dbHelper.addApptzrInfo("Feta Bites", 800, number_of_people, ID);
+        Toast.makeText(this, " "+ inserted, Toast.LENGTH_SHORT).show();
+
+        if (inserted > 0) {
+            Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void saveEndiveOrder(View view) {
+
+        long inserted;
+
+        DBHelper dbHelper = new DBHelper(this);
+
+        inserted = dbHelper.addApptzrInfo("Walnut Endive", 900, number_of_people, ID);
+        Toast.makeText(this, " "+ inserted, Toast.LENGTH_SHORT).show();
+
+        if (inserted > 0) {
+            Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void saveSkewerOrder(View view) {
+
+        long inserted;
+
+        DBHelper dbHelper = new DBHelper(this);
+
+        inserted = dbHelper.addApptzrInfo("Antipasta Skewers", 1250, number_of_people, ID);
+        Toast.makeText(this, " "+ inserted, Toast.LENGTH_SHORT).show();
+
+        if (inserted > 0) {
+            Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void saveBurrataOrder(View view) {
+
+        long inserted;
+
+        DBHelper dbHelper = new DBHelper(this);
+
+        inserted = dbHelper.addApptzrInfo("Burrata with Pesto", 1650, number_of_people, ID);
+        Toast.makeText(this, " "+ inserted, Toast.LENGTH_SHORT).show();
+
+        if (inserted > 0) {
+            Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void saveApricotOrder(View view) {
+
+        long inserted;
+
+        DBHelper dbHelper = new DBHelper(this);
+
+        inserted = dbHelper.addApptzrInfo("Grilled Apricot", 900, number_of_people, ID);
+        Toast.makeText(this, " "+ inserted, Toast.LENGTH_SHORT).show();
+
+        if (inserted > 0) {
+            Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void saveHummasOrder(View view) {
+
+        long inserted;
+
+        DBHelper dbHelper = new DBHelper(this);
+
+        inserted = dbHelper.addApptzrInfo("Veggie & Hummas", 1100, number_of_people, ID);
+        Toast.makeText(this, " "+ inserted, Toast.LENGTH_SHORT).show();
+
+        if (inserted > 0) {
+            Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void savePizzaOrder(View view) {
+
+        long inserted;
+
+        DBHelper dbHelper = new DBHelper(this);
+
+        inserted = dbHelper.addApptzrInfo("Pizza", 1200, number_of_people, ID);
+        Toast.makeText(this, " "+ inserted, Toast.LENGTH_SHORT).show();
+
+        if (inserted > 0) {
+            Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void saveShrimpBiteOrder(View view) {
+
+        long inserted;
+
+        DBHelper dbHelper = new DBHelper(this);
+
+        inserted = dbHelper.addApptzrInfo("Shrimp Bites", 890, number_of_people, ID);
+        Toast.makeText(this, " "+ inserted, Toast.LENGTH_SHORT).show();
+
+        if (inserted > 0) {
+            Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+    public void viewAllAptzr(View view) {
+        DBHelper dbhelper = new DBHelper(this);
+
+        List info = dbhelper.readAllApptzr();
+
+        String[] infoArray = (String[]) info.toArray(new String[0]);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Selected Appetizer Details");
+
+        builder.setItems(infoArray, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+    }
 
 }

@@ -59,6 +59,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/e_txt_num_1" />
 
+    <EditText
+        android:id="@+id/e_txt_id_1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_view_initial_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_caterOrder_id"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dessert" />
+
     <Button
         android:id="@+id/btn_appetizer"
         android:layout_width="wrap_content"
@@ -219,6 +234,17 @@
         android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_confirm_1"
         app:layout_constraintStart_toEndOf="@+id/btn_confirm_1" />
+
+    <TextView
+        android:id="@+id/tv_caterOrder_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/ShowOrderID"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_view_initial_details"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
